@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"></script>
+
 </head>
 <body>
   
@@ -16,10 +18,7 @@
       padding-top: 40px;
       padding-bottom: 40px;
       background: linear-gradient(75deg, #ffe799, #ffd582, #ffc174, #ffac70, #ff9677, #ff8287, #ff709d, #ff61b5); /* made at https://learnui.design/tools/gradient-generator.html */
-    }
-    div {
-      border: dotted red 2px;
-      color: black
+      font-family: "Tahoma";
     }
     .avatar_img {
       width: 120px;
@@ -34,11 +33,14 @@
       border-radius: 100px;
       object-fit: cover;
       background-color: rgba(149, 123, 173, 0.5);
+      display: flex;
+      align-items: center;
     }
     .item {
       background-color: rgba(149, 123, 173, 0.5);
       margin-bottom: 20px;
-      display: flex
+      display: flex;
+      align-items: center;
     }
     .social_icons_row {
         background-color: rgba(149, 123, 173, 0.5);
@@ -55,39 +57,46 @@
     .name_row {
       margin-bottom: 20px;
       text-align: center;
+      font-size: 25px;
+      font-weight: 900;
     }
     .social_icons_row {
       margin-bottom: 20px;
       display: flex;
       justify-content: space-around;
     }
+    .link-text {
+      text-align: center;
+      flex-grow: 1;
+      text-decoration: none;
+    }
   </style>
   
   <div class = 'main_container'>
     <div class = 'image_row'>
-      <img class = 'avatar_img' src="pics/pic.jpg" alt="Chloe Attlan Headshot">
+      <img class = 'thumbnail' src="pics/pic.jpg" alt="Chloe Attlan Headshot">
     </div>
     <div class = 'name_row'>
       Chloe Attlan
     </div>
-    <div class = social_icons_row>
+    <div class = 'item'>
       <img class = 'thumbnail' src="pics/f827ea16-a175-4c4e-8282-87f11e7c49c2.webp" alt="Linkedin">
-      <a href="https://www.linkedin.com/in/chloe-attlan-2ba00b220/" target = "_blank">
-        Linkedin
+      <a class = 'link-text' href="https://www.linkedin.com/in/chloe-attlan-2ba00b220/" target = "_blank">
+        <i class="fa-brands fa-linkedin"></i> 
       </a>
     </div>
     <div class = 'links'>
       <div class = 'item'>
         <img class = 'thumbnail' src = 'pics/d22f41b6-9736-4255-94a4-cdbc9f9e40f3.webp'>
-        <a target = "_blank" href = "https://en.wikipedia.org/wiki/Dog">Dogs!</a>
+        <a class="link-text" target = "_blank" href = "https://en.wikipedia.org/wiki/Dog">Dogs!</a>
       </div>
       <div class = 'item'>
         <img class = 'thumbnail' src = 'pics/c64ac24b-46b4-4a56-8a6f-7bb83b9f6ed6.webp'>
-        <a target = "_blank" href = "https://en.wikipedia.org/wiki/Philadelphia">Philly!</a>
+        <a class="link-text" target = "_blank" href = "https://en.wikipedia.org/wiki/Philadelphia">Philly!</a>
       </div>
       <div class = 'item'>
         <img class = 'thumbnail' src = 'pics/22ea195e-f542-496a-aed2-f0eb59999649.webp'>
-        <a target = "_blank" href = "https://en.wikipedia.org/wiki/Chicago">Chicago!</a>
+        <a class="link-text" target = "_blank" href = "https://en.wikipedia.org/wiki/Chicago">Chicago!</a>
       </div>
     </div>
   </div>
